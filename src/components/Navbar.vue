@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex items-center justify-between h-32 ">
+    <nav class="flex items-center justify-between h-32">
         <div class="flex grap-2">
             <h3 class="text-2xl font-bold text-white">Hollow <span class=" text-secondary">ee</span>nd</h3>
             <svg class="w-7 lg:w-9" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -8,7 +8,7 @@
                     fill="white" />
             </svg>
         </div>
-        <div class="flex items-center gap-10">
+        <div class="items-center hidden gap-10 md:flex">
             <a class="font-medium text-white" href="#home">Home</a>
             <a class="font-medium text-white" href="#category">Category</a>
             <a class="font-medium text-white" href="#about">About</a>
@@ -22,4 +22,6 @@
 
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

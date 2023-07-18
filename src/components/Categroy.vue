@@ -1,29 +1,33 @@
 <template>
-    <section id="category" class="flex flex-col items-center pt-20">
-        <h1 class="my-12 text-5xl font-bold text-white">Category</h1>
-        <div class="grid grid-cols-3 place-items-center">
-            <div v-for="category in categories" :key="category.title" class="grid text-center text-white place-items-center">
-                <div class="p-10">
-                    <img :src="category.image" alt="">
-                </div>
-                <h1 class="text-3xl font-bold">{{category.title}}</h1>
-                <p class="w-3/4">{{category.desc}} </p>
-            </div>
-        </div>
-    </section>
-    <section class="grid items-center grid-flow-col grid-cols-2 gap-10 mt-20">
-        <div class="items-start p-10 bg-green-500">
-            <img src="../assets/image/category2-img.webp" alt="">
-        </div>
-        <div class="bg-yellow-500">
-            <div class="text-6xl font-bold text-white">
-                <h2 class="mb-5">What's that</h2>
-                <div class="flex gap-5"> 
-                    <h2 class="">Halloweend</h2>
-                    <img src="../assets/image/head2-img.png" alt="">
+    <section id="category" class="">
+        <div class="py-24 ">
+            <h3 class="text-6xl font-bold text-center text-white mb-14">Category</h3>
+            <div class="flex flex-col md:space-x-24 md:flex-row">
+                <div class="" v-for="category in categories" :key="category.title">
+                    <div class="flex flex-col items-center justify-center text-white">
+                        <img :src="category.image" alt="" class="">
+                        <p class="text-3xl ">{{ category.title }}</p>
+                        <p class="w-2/3 text-center">{{ category.desc }}</p>
+                    </div>
                 </div>
             </div>
-            <p class="w-[80%] mt-10 text-xl text-white">Halloween or Hallowe'en, also known as Allhalloween, All Hallows' Eve, or All Saints' Eve, is a celebration observed in many countries on 31 October, the eve of the Western Christian feast of All Hallows' Day.</p>
+        </div>
+
+        <!-- about -->
+        <div id="about" class="flex flex-col items-center justify-center md:flex-row">
+            <div class="w-full md:w-1/2 ">
+                <img src="../assets/image/category2-img.webp" alt="">
+            </div>
+            <div class="flex flex-col items-center justify-center px-8 md:w-1/2 md:ps-32 md:justify-start md:items-start">
+                <div class="text-3xl font-bold text-white md:text-6xl">
+                    <h1 class="mb-4">What's that</h1>
+                    <div class="flex space-x-3">
+                        <h1 class="">Halloween</h1>
+                        <img src="../assets/image/head2-img.png" alt="">
+                    </div>
+                </div>
+                <p class="text-center text-white md:text-xl md:text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sapiente soluta voluptates saepe officia nulla, ab ad, quae, rerum id magnam </p>
+            </div>
         </div>
     </section>
 </template>
